@@ -19,6 +19,8 @@ class CreateProductsTable extends Migration
             $table->string('description');
             $table->float('price');
             $table->string('image');
+            $table->unsignedInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }
