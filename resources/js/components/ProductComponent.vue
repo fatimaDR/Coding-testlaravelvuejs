@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <add-component></add-component>
     <table class="table table-hover">
       <thead class="thead-light">
         <tr>

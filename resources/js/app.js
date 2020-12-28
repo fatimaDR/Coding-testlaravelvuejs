@@ -11,11 +11,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
 Vue.component('pagination', require('laravel-vue-pagination'));
-
-/* import VueAxios from 'vue-axios';
-import axios from 'axios';
-Vue.use(VueAxios, axios); */
-
+Vue.component('add-component', require('./components/AddComponent.vue').default);
 
 import Home from './components/HomeComponent.vue';
 import Product from './components/ProductComponent.vue';
